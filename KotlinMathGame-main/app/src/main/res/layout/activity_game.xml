@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/scoreText"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lifeText"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/life"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/timeText"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/time"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/answerHint"
+        android:inputType="numberDecimal|number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOk"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/buttonOk"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/buttonNxt"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/buttonNxt"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+</LinearLayout>
